@@ -4,7 +4,7 @@ import com.ziyagurel.restnorthwindh.entities.concretes.Product;
 
 import java.util.List;
 
-public interface ProductService {
+public interface IProductService {
 
     List<Product> getAll();
 }
