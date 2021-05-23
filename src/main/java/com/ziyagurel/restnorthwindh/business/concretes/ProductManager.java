@@ -19,6 +19,6 @@ public class ProductManager implements IProductService {
 
     @Override
     public List<Product> getAll() {
-        return null;
+        return dao.findAll();
     }
 }

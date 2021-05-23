@@ -8,6 +8,7 @@ import javax.persistence.*;
 @Table(name="products")
 @Data
 public class Product {
+
     @Id
     @GeneratedValue
     @Column(name="product_id")
@@ -16,23 +17,11 @@ public class Product {
     private int categoryId;
     @Column(name="product_name")
     private String productName;
-    @Column(name="unit_prace")
+    @Column(name="unit_price")
     private double unitPrice;
-    @Column(name="unit_in_stock")
-    private short unitInStock;
+    @Column(name="units_in_stock")
+    private short unitsInStock;
     @Column(name="quantity_per_unit")
     private String quantityPerUnit;
 
-    public Product(int id, int categoryId, String productName, double unitPrice, short unitInStock, String quantityPerUnit) {
-        this.id = id;
-        this.categoryId = categoryId;
-        this.productName = productName;
-        this.unitPrice = unitPrice;
-        this.unitInStock = unitInStock;
-        this.quantityPerUnit = quantityPerUnit;
-    }
-
-    public Product() {
-
-    }
 }
